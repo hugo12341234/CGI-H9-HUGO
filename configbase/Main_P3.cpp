@@ -290,9 +290,9 @@ int main() {
 		//glBindVertexArray(0);
 		
 		crearModelo(glm::vec3(5.0f, 5.0f, 0.0f), glm::vec3(0.0f, -1.0f, 0.0f), glm::vec3(1.0f,2.0f,1.0f), modelLoc);
-		crearModelo(glm::vec3(-5, 5, 0), glm::vec3(1, 1, 2), glm::vec3(1,1,1), modelLoc);
-		crearModelo(glm::vec3(-5, -5, 0), glm::vec3(-1, 2, 0), glm::vec3(2,1,2), modelLoc);
-		crearModelo(glm::vec3(5, -5, 0), glm::vec3(1, 2, 2), glm::vec3(2,1,2), modelLoc);
+		crearModelo(glm::vec3(-5.0f, 5.0f, 0.0f), glm::vec3(1.0f, 1.0f, 2.0f), glm::vec3(1.0f,1.0f,1.0f), modelLoc);
+		crearModelo(glm::vec3(-5.0f, -5.0f, 0.0f), glm::vec3(-1.0f, 2.0f, 0.0f), glm::vec3(2.0f,1.0f,2.0f), modelLoc);
+		crearModelo(glm::vec3(5.0f, -5.0f, 0.0f), glm::vec3(1.0f, 2.0f, 2.0f), glm::vec3(2.0f,1.0f,2.0f), modelLoc);
 		
 		
 		glBindVertexArray(0);
