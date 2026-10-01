@@ -251,7 +251,7 @@ int main() {
 
 		//dedo 2
 		modelTemp2 = modelTemp;
-		model = glm::translate(modelTemp2, glm::vec3(0.25f, 0.3f, -0.25f));
+		model = glm::translate(modelTemp2, glm::vec3(0.25f, 0.25f, -0.25f));
 		model = glm::rotate(model, glm::radians(dedo2), glm::vec3(0.0f, 0.0, -1.0f));
 		modelTemp2 = model = glm::translate(model, glm::vec3(0.25f, 0.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.5f, 0.15f, 0.15f));
@@ -272,7 +272,7 @@ int main() {
 
 		//dedo3
 		modelTemp2 = modelTemp;
-		model = glm::translate(modelTemp2, glm::vec3(0.25f, -0.3f, -0.25f));
+		model = glm::translate(modelTemp2, glm::vec3(0.25f, -0.25f, -0.25f));
 		model = glm::rotate(model, glm::radians(dedo3), glm::vec3(0.0f, 0.0, 1.0f));
 		modelTemp2 = model = glm::translate(model, glm::vec3(0.25f, 0.0f, 0.0f));
 		model = glm::scale(model, glm::vec3(0.5f, 0.15f, 0.15f));
