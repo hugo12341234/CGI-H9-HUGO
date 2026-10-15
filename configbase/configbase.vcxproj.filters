@@ -23,22 +23,22 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Shader\modelLoading.frag">
-      <Filter>Archivos de origen\shader</Filter>
-    </None>
-    <None Include="Shader\modelLoading.vs">
-      <Filter>Archivos de origen\shader</Filter>
-    </None>
-    <None Include="Shader\lamp.frag">
-      <Filter>Archivos de origen\shader</Filter>
-    </None>
-    <None Include="Shader\lamp.vs">
-      <Filter>Archivos de origen\shader</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="Texturizado.cpp">
+    <ClCompile Include="Iluminacion.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Downloads\Materiales e iluminación (1)\Shader\lamp.frag">
+      <Filter>Archivos de origen\shader</Filter>
+    </None>
+    <None Include="..\..\..\Downloads\Materiales e iluminación (1)\Shader\lamp.vs">
+      <Filter>Archivos de origen\shader</Filter>
+    </None>
+    <None Include="..\..\..\Downloads\Materiales e iluminación (1)\Shader\lighting.frag">
+      <Filter>Archivos de origen\shader</Filter>
+    </None>
+    <None Include="..\..\..\Downloads\Materiales e iluminación (1)\Shader\lighting.vs">
+      <Filter>Archivos de origen\shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
