@@ -142,13 +142,13 @@
     <ClInclude Include="Shader.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Iluminacion.cpp" />
+    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lamp.frag" />
+    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lamp.vs" />
+    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lighting.frag" />
+    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lighting.vs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\Downloads\Materiales e iluminación (1)\Shader\lamp.frag" />
-    <None Include="..\..\..\Downloads\Materiales e iluminación (1)\Shader\lamp.vs" />
-    <None Include="..\..\..\Downloads\Materiales e iluminación (1)\Shader\lighting.frag" />
-    <None Include="..\..\..\Downloads\Materiales e iluminación (1)\Shader\lighting.vs" />
+    <ClCompile Include="fuentesDeLuz.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
