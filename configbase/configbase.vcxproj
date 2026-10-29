@@ -142,13 +142,15 @@
     <ClInclude Include="Shader.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lamp.frag" />
-    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lamp.vs" />
-    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lighting.frag" />
-    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lighting.vs" />
+    <None Include="..\..\..\Downloads\Animación básica\Shader\lamp.frag" />
+    <None Include="..\..\..\Downloads\Animación básica\Shader\lamp.vs" />
+    <None Include="..\..\..\Downloads\Animación básica\Shader\lighting.frag" />
+    <None Include="..\..\..\Downloads\Animación básica\Shader\lighting.vs" />
+    <None Include="..\..\..\Downloads\Animación básica\Shader\modelLoading.frag" />
+    <None Include="..\..\..\Downloads\Animación básica\Shader\modelLoading.vs" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fuentesDeLuz.cpp" />
+    <ClCompile Include="Maquina de estados.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

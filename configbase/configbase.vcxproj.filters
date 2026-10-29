@@ -23,21 +23,27 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lamp.frag">
+    <None Include="..\..\..\Downloads\Animación básica\Shader\lamp.frag">
       <Filter>Archivos de origen\shader</Filter>
     </None>
-    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lamp.vs">
+    <None Include="..\..\..\Downloads\Animación básica\Shader\lamp.vs">
       <Filter>Archivos de origen\shader</Filter>
     </None>
-    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lighting.frag">
+    <None Include="..\..\..\Downloads\Animación básica\Shader\lighting.frag">
       <Filter>Archivos de origen\shader</Filter>
     </None>
-    <None Include="..\..\..\Downloads\Fuentes de luz (1)\Shader\lighting.vs">
+    <None Include="..\..\..\Downloads\Animación básica\Shader\lighting.vs">
+      <Filter>Archivos de origen\shader</Filter>
+    </None>
+    <None Include="..\..\..\Downloads\Animación básica\Shader\modelLoading.frag">
+      <Filter>Archivos de origen\shader</Filter>
+    </None>
+    <None Include="..\..\..\Downloads\Animación básica\Shader\modelLoading.vs">
       <Filter>Archivos de origen\shader</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="fuentesDeLuz.cpp">
+    <ClCompile Include="Maquina de estados.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
