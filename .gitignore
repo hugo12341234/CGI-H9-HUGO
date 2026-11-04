@@ -1,4 +1,13 @@
-.vs
-Debug
-configInicial/Debug
-External Libraries/
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.ipch
+
+# Salida de compilacion (solo dentro de cada practica; NO afecta a External Libraries/)
+Practica*/**/Debug/
+Practica*/**/Release/
+Practica*/**/x64/
+Practica*/**/x86/

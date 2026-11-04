@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\..\..\Downloads\Configuración base-20260210\Main\Main\glew32.dll">
+    <None Include="glew32.dll">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
