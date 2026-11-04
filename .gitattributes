@@ -1,0 +1,7 @@
+# Visual Studio needs CRLF in solution and project files
+*.sln text eol=crlf
+*.vcxproj text eol=crlf
+
+# Binary assets
+*.png binary
+*.jpg binary

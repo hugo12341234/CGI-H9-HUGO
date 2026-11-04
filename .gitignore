@@ -1,4 +1,16 @@
-.vs
-Debug
-configInicial/Debug
-External Libraries/
+# Visual Studio build output and local state
+x64/
+x86/
+Debug/
+Release/
+.vs/
+*.user
+*.suo
+*.db
+*.opendb
+*.ipch
+*.pdb
+*.ilk
+
+# vcpkg: libraries are restored automatically on first build
+vcpkg_installed/
