@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Downloads\Configuración base-20260210\Main\Main\Main.cpp" />
+    <ClCompile Include="Main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\Downloads\Configuración base-20260210\Main\Main\glew32.dll" />
