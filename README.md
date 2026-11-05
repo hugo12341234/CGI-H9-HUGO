@@ -14,7 +14,7 @@ Prácticas 0 a 9 de OpenGL moderno (C++ con GLFW, GLEW, GLM, Assimp y SOIL2). **
    ```
    git switch Practica5_CargaModelos_CamSimetrica
    ```
-   Sin cambiar de rama se obtiene la Práctica 9 (rama `master`).
+   Sin cambiar de rama se obtiene la Práctica 1 (rama `master`).
 3. Abrir la solución de la raíz: `configCGIH9.sln` (en la Práctica 0 es `Project1.sln`).
 4. En la barra superior elegir **Debug** y **x86** (las librerías son de 32 bits).
 5. Presionar **F5** (o Ctrl + F5) para compilar y ejecutar.
