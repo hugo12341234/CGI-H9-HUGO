@@ -2,7 +2,7 @@
 
 **Hugo Emmanuel Chacon Jaral** · Facultad de Ingeniería, UNAM
 
-Prácticas 0 a 9 de OpenGL moderno (C++ con GLFW, GLEW y GLM). Cada práctica es un proyecto de Visual Studio independiente y todo lo necesario para compilarla viene en este repositorio.
+Prácticas 0 a 9 de OpenGL moderno (C++ con GLFW, GLEW, GLM, Assimp y SOIL2). **Cada práctica es una rama** y todas usan la misma estructura: una sola solución de Visual Studio en la raíz del repositorio. Al cambiar de rama, la solución pasa a ser la de esa práctica. Todo lo necesario para compilar viene en el repositorio.
 
 ## Cómo compilar una práctica
 
@@ -10,37 +10,45 @@ Prácticas 0 a 9 de OpenGL moderno (C++ con GLFW, GLEW y GLM). Cada práctica es
    ```
    git clone https://github.com/hugo12341234/CGI-H9-HUGO
    ```
-2. Abrir el archivo `.sln` que está dentro de la carpeta de la práctica.
-3. En la barra superior elegir **Debug** y **x86** (es la única plataforma disponible; las librerías son de 32 bits).
-4. Presionar **F5** (o Ctrl + F5) para compilar y ejecutar.
+2. Elegir la práctica cambiando de rama (con Visual Studio cerrado o aceptando recargar la solución):
+   ```
+   git switch Practica5_CargaModelos_CamSimetrica
+   ```
+   Sin cambiar de rama se obtiene la Práctica 9 (rama `master`).
+3. Abrir la solución de la raíz: `configCGIH9.sln` (en la Práctica 0 es `Project1.sln`).
+4. En la barra superior elegir **Debug** y **x86** (las librerías son de 32 bits).
+5. Presionar **F5** (o Ctrl + F5) para compilar y ejecutar.
 
-**Requisitos:** Windows y Visual Studio 2022 o 2026 con la carga de trabajo *Desarrollo para el escritorio con C++*. No hay que instalar ni configurar nada más.
+Para pasar a otra práctica basta repetir el paso 2 y volver a compilar.
 
-## Prácticas
+**Requisitos:** Windows y Visual Studio con la carga de trabajo *Desarrollo para el escritorio con C++*. No hay que instalar ni configurar nada más.
 
-| Carpeta | Tema | Código principal |
+## Ramas
+
+| Rama | Tema | Código principal |
 |---|---|---|
-| `Practica0_ConfiguracionOpenGL` | Configuración de OpenGL | `Project1/Main.cpp` |
-| `Practica1_IntroduccionOpenGL` | Introducción a OpenGL (dibujo 2D) | `configCGIH9/Main_Dibujo2D.cpp` |
-| `Practica2_Proy_Puert_Trans` | Proyecciones y transformaciones básicas | `configCGIH9/Main_P3.cpp` |
-| `Practica3_ModeladoGeometrico` | Modelado geométrico | `configCGIH9/Main_Modelado.cpp` |
-| `Practica4_ModeladoJerarquico` | Modelado jerárquico | `configCGIH9/Modelado_Jerarquico.cpp` |
-| `Practica5_CargaModelos_CamSimetrica` | Carga de modelos y cámara | `configCGIH9/Carga de Modelos.cpp` |
-| `Practica6_Texturizado` | Texturizado | `configCGIH9/Texturizado.cpp` |
-| `Practica7_Iluminacion1` | Materiales e iluminación | `configCGIH9/Iluminacion.cpp` |
-| `Practica8_Iluminacion2` | Fuentes de luz | `configCGIH9/fuentesDeLuz.cpp` |
-| `Practica9_AnimacionBasica` | Animación básica (máquina de estados) | `configCGIH9/Maquina de estados.cpp` |
+| `Practica0_ConfiguracionOpenGL` | configuración de OpenGL | `Project1/Main.cpp` |
+| `Practica1_IntroduccionOpenGL` | introducción a OpenGL (dibujo 2D) | `configCGIH9/Main_Dibujo2D.cpp` |
+| `Practica2_Proy_Puert_Trans` | proyecciones, puertos de vista y transformaciones | `configCGIH9/Main_P3.cpp` |
+| `Practica3_ModeladoGeometrico` | modelado geométrico | `configCGIH9/Main_Modelado.cpp` |
+| `Practica4_ModeladoJerarquico` | modelado jerárquico | `configCGIH9/Modelado_Jerarquico.cpp` |
+| `Practica5_CargaModelos_CamSimetrica` | carga de modelos y cámara sintética | `configCGIH9/Carga de Modelos.cpp` |
+| `Practica6_Texturizado` | texturizado | `configCGIH9/Texturizado.cpp` |
+| `Practica7_Iluminacion1` | iluminación 1 | `configCGIH9/Iluminacion.cpp` |
+| `Practica8_Iluminacion2` | iluminación 2 (fuentes de luz) | `configCGIH9/fuentesDeLuz.cpp` |
+| `Practica9_AnimacionBasica` | animación básica (máquina de estados) | `configCGIH9/Maquina de estados.cpp` |
 
-El archivo de solución de la Práctica 0 es `Project1.sln`; en las prácticas 1 a 9 es `configCGIH9.sln`.
+La rama `todas-las-practicas` conserva la versión anterior del repositorio, con una carpeta por práctica.
 
-## Estructura
+## Estructura de cada rama
 
 ```
-External Libraries/        GLEW, GLFW, GLM, Assimp y SOIL2, compartidas por todas las prácticas
-PracticaN_.../             .sln, código, shaders, modelos e imágenes de la práctica
+External Libraries/    GLEW, GLFW, GLM, Assimp y SOIL2
+configCGIH9.sln        solución de la práctica (Project1.sln en la Práctica 0)
+configCGIH9/           proyecto: código, shaders, modelos, imágenes y DLL
 ```
 
-Los proyectos encuentran `External Libraries` con una ruta relativa, por lo que el repositorio puede clonarse en cualquier carpeta.
+Los proyectos encuentran `External Libraries` con `$(SolutionDir)`, como en la configuración de clase.
 
 ## Problemas comunes
 
