@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.VC.opendb
+*.ipch
+
+# Salida de compilacion (solo en la raiz y dentro del proyecto; NO afecta a External Libraries/)
+/Debug/
+/Release/
+/x64/
+/x86/
+/configCGIH9/Debug/
+/configCGIH9/Release/
+/configCGIH9/x64/
+/configCGIH9/x86/
+/Project1/Debug/
+/Project1/Release/
+/Project1/x64/
+/Project1/x86/
